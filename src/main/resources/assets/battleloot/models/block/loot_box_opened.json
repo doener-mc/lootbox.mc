@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "battleloot:block/loot_box_top_open",
+    "bottom": "battleloot:block/loot_box_bottom",
+    "side": "battleloot:block/loot_box_side"
+  }
+}

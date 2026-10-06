@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "opened=false": { "model": "battleloot:block/loot_box" },
+    "opened=true":  { "model": "battleloot:block/loot_box_opened" }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "block.battleloot.loot_box": "Lootbox",
+  "item.battleloot.config_wand": "Lootbox-Konfigurationsstab",
+  "item.battleloot.config_wand.tooltip": "Rechtsklick auf eine Lootbox zum Konfigurieren (nur OPs)",
+  "itemGroup.battleloot": "Battle Loot",
+  "gui.battleloot.title": "Item-Pool (Stackgröße = Max)",
+  "gui.battleloot.min": "Min. Items:",
+  "gui.battleloot.max": "Max. Items:",
+  "gui.battleloot.refill": "Auffüllen nach:",
+  "gui.battleloot.mode.destroy": "Modus: Nach Öffnen zerstören",
+  "gui.battleloot.mode.refill": "Modus: Nach Zeit auffüllen",
+  "msg.battleloot.no_permission": "Du brauchst OP-Rechte, um Lootboxen zu konfigurieren.",
+  "msg.battleloot.already_opened": "Diese Lootbox ist bereits geöffnet.",
+  "msg.battleloot.empty": "Diese Lootbox hat keine Items konfiguriert."
+}
