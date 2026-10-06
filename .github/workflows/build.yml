@@ -1,4 +1,4 @@
-.github/workflows/build.ymname: Build Mod
+name: Build Mod
 
 on:
   push:
