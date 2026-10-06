@@ -20,9 +20,20 @@ jobs:
           gradle-version: 8.1.1
 
       - name: Build
-        run: gradle build --no-daemon
+        run: |
+          echo "Dateien im Repository:"
+          ls -la
+          SETTINGS=$(find . -name settings.gradle -not -path './.git/*' | head -n 1)
+          if [ -z "$SETTINGS" ]; then
+            echo "FEHLER: Keine settings.gradle im Repository gefunden. Wurden die Projektdateien hochgeladen?"
+            exit 1
+          fi
+          DIR=$(dirname "$SETTINGS")
+          echo "Baue in Ordner: $DIR"
+          cd "$DIR"
+          gradle build --no-daemon
 
       - uses: actions/upload-artifact@v4
         with:
           name: BattleLoot-jar
-          path: build/libs/*.jar
+          path: "**/build/libs/*.jar"
